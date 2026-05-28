@@ -1,9 +1,9 @@
-import * as services from '../services/home.js';
+import * as services from '../services/api.js';
 
-// Função para GET na homepage
-export async function getHome(req, res) {    
+// Função para GET em api
+export async function getApi(req, res) {    
     try { // Tenta chamar o service
-        const response = await services.getHome(); // Tenta pegar a resposta
+        const response = await services.getApi(); // Tenta pegar a resposta
         
         return res.status(200).json({"success": true, "response": response}); // Retorna a resposta
     } catch (error) { // Se der error, printa e retorna falso
