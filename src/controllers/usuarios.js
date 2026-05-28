@@ -1,5 +1,5 @@
 // Importa todos os services
-import * as services from '../services/services.js';
+import * as services from '../services/usuarios.js';
 
 // Função para ler o body da requisição
 const getRequestBody = (req) => {
@@ -22,44 +22,6 @@ const getRequestBody = (req) => {
     });
 };
 
-// Função para GET em homepage
-export function getHome(req, res) {
-    try { // Tenta chamar o service
-        const response = services.getHome();
-    
-        return response;
-    } catch (error) { // Se der error, printa e retorna falso
-        console.error(`[GET /] Error: ${error}`);
-
-        return false;
-    }
-}
-
-// Função para GET em sobre
-export function getSobre(req, res) {
-    try { // Tenta chamar o service
-        const response = services.getSobre();
-    
-        return response;
-    } catch (error) { // Se der erro, printa e retorna falso
-        console.error(`[GET /sobre] Error: ${error}`);
-
-        return false;
-    }
-}
-
-// Função para GET em api
-export function getApi(req, res) {
-    try { // Tenta chamar o service
-        const response = services.getApi();
-    
-        return response;
-    } catch (error) { // Se der erro, printa e retorna falso
-        console.error(`[GET /api] Error: ${error}`);
-
-        return false;
-    }
-}
 
 // Função para GET em usuarios
 export function getUsuarios(req, res) {

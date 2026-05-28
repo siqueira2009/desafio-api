@@ -4,22 +4,6 @@ import fs, { readFileSync } from 'fs';
 // Importa todos os models
 import * as models from '../models/models.js'
 
-// Função para GET em homepage
-export function getHome() {
-    return "Olá, aluno!"; // Retorna a mensagem simples
-}
-
-// Função para GET em sobre
-export function getSobre() {
-    // Retorna a mensagem de sobre mim
-    return "My name is Lucas and love programming, gaming, listening to heavy metal and watching movies. I'm currently doing a technician about system development at ETEC Bento Quirino."
-}
-
-// Função para GET em api
-export function getApi() {
-    return "Lucas Siqueira"; // Retorna meu nomne
-}
-
 // Função para GET em usuarios
 export function getUsuarios() {
     try { // Primeiro tenta...
